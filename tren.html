@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+/*
+
+function Calculator() {
+    this.read = function(){
+        this.x = prompt("First number", 0);
+        this.y = prompt("Second number", 0);
+    },
+    this.sum = function(){
+        return +this.x+(+this.y);
+    },
+    this.mul = function(){
+        return this.x*this.y;
+    }
+};
+
+let calculator = new Calculator();
+
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );*/
+
+/*
+function Accumulator(v) {
+    this.value = v;
+    this.read = function(){
+        let a = +prompt("How much to add?",0);
+        this.value+=a;
+    }
+    return this.value;
+}
+
+let accumulator = new Accumulator(1);
+
+accumulator.read();
+accumulator.read();
+
+alert(accumulator.value);
+*/
+/*
+let obj = {
+    name: "John",
+    money: 1000,
+
+
+    toString() {
+        return `name: "${this.name}"`;
+    },
+
+    valueOf() {
+        return this.money;
+    }
+};
+
+alert(+obj);
+*/
+
+//function random(min, max) {
+  //let a = min + Math.random() * (max - min);
+  //a = parseInt(a);
+ // return a;
+//}
+
+//function ucFirst(str) {
+//  if (!str) return str;
+
+//  return str[0].toUpperCase() + str.slice(1);
+//}
+
+
+//alert(ucFirst("weed"));
+/*
+function checkSpam(str) {
+    str = str.toLowerCase();
+    if (str.includes("xxx") || str.includes("viagra")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+*/
+function truncate(str,ml) {
+    if (str.len<=ml) {
+        return str;
+    } else {
+        let o = str.slice(0,ml);
+        o+="...";
+        return o;
+    }
+}
+
+alert(truncate("What id like to tell on this topic is", 20));
+
+
+//alert(checkSpam('buy ViAgRA now'));
+//alert(checkSpam('free xxxxx'));
+//alert(checkSpam("innocent rabbit"));
+//alert(random(1,5));
+/*let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep: function() { // shows the current step
+    alert( this.step );
+    return this;
+  }
+};
+
+ladder.up().up().down().showStep().down().showStep(); */
+
+/*
+function isInt(a) {
+    if(typeof a !== 'number' ) {
+        return false;
+    }  
+        return a % 1 === 0;
+    
+}
+
+alert(isInt(7));*/
+
+/*
+let user = {
+    name: "John",
+    sizes: {
+        height: 182,
+        width: 50,
+    }
+};
+
+let admin = { name: "Admin"};*/
+
+
+/*
+let clone = structuredClone(user);
+
+alert ( user.sizes === clone.sizes );
+
+let cl = Object.assign({}, user);
+
+alert ( user.sizes === cl.sizes );
+
+user.sizes.width = 60;
+
+alert(clone.sizes.width);
+*/
+
+
+
+</script>
